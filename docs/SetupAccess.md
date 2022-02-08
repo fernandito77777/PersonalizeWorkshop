@@ -24,7 +24,11 @@ Now, we need to simply giving the permission for our personalize to access our d
 8. Make sure to check both `AmazonPersonalizeFullAccess` and `AmazonS3FullAccess` existed on the policy summary. Once it's good, click `Create Role`
     ![](../images/SetupAccess/8.png)
 
-We are going to use this role during Personalize Workshop Step.
+9. In Roles menu on IAM Console, Search "PersonalizeFullAccess" Role Name (the one that we had created) and click the role name
+    ![](../images/SetupAccess/9.png)
+
+10. Copy the ARN text and paste it to your favourite text editor. We are going to need it later.
+    ![](../images/SetupAccess/10.png)
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
 

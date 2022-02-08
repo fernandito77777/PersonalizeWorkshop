@@ -21,7 +21,7 @@ To try it out, we need to setup the data. By using Object Storage called S3 (Sim
 7. Click `Upload`
     ![](../images/SetupData/7.png)
 
-8. Download this [Interactions Data](../Assets/interactions.csv) and [Items Data](../Assets/items.csv)
+8. Download this [Interactions Data](../Assets/interactions.csv) and [Items Data](../Assets/items.csv) by right clicking and choose "Open in a new Tab" and click "Download" or "Raw". Once the page is open, choose "Save As".
 9. Once you download the data, upload it to S3 by dragging it and drop it to the console, or simply click `Add Files` and choose your files.
     ![](../images/SetupData/9.png)
 
