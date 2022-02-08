@@ -24,11 +24,52 @@ Now, we need to simply giving the permission for our personalize to access our d
 8. Make sure to check both `AmazonPersonalizeFullAccess` and `AmazonS3FullAccess` existed on the policy summary. Once it's good, click `Create Role`
     ![](../images/SetupAccess/8.png)
 
-9. In Roles menu on IAM Console, Search "PersonalizeFullAccess" Role Name (the one that we had created) and click the role name
+9. In Roles menu on IAM Console, Search `PersonalizeFullAccess` Role Name (the one that we had created) and click the role name
     ![](../images/SetupAccess/9.png)
 
 10. Copy the ARN text and paste it to your favourite text editor. We are going to need it later.
     ![](../images/SetupAccess/10.png)
+
+Now, we need to setup the setting on the S3 bucket Access Policy.
+
+11. Go to [S3 Console](https://s3.console.aws.amazon.com/s3/home?region=ap-southeast-1)
+12. Click your bucket name
+    ![](../images/SetupAccess/12.png)
+
+13. Click `Permissions` tab and scroll down
+    ![](../images/SetupAccess/13.png)
+
+14. In Bucket Policy Section, click `Edit`
+    ![](../images/SetupAccess/14.png)
+
+15. Copy this JSON Code. Please edit the `BucketName` to your bucket name (formatted with `<yourname>-test-personalize-data`)
+
+```
+{
+	"Version": "2012-10-17",
+	"Id": "PersonalizeS3BucketAccessPolicy",
+	"Statement": [
+		{
+			"Sid": "PersonalizeS3BucketAccessPolicy",
+			"Effect": "Allow",
+			"Principal": {
+				"Service": "personalize.amazonaws.com"
+			},
+			"Action": [
+				"s3:GetObject",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::BucketName",
+				"arn:aws:s3:::BucketName/*"
+			]
+		}
+	]
+}
+```
+
+16. Paste it to bucket policy, and click `Save Changes`
+    ![](../images/SetupAccess/16.png)
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
 
