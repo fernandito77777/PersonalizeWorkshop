@@ -177,6 +177,4 @@ You need to wait for about 10 to 20 minutes for all the models to be ready.
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
 
-[CONTINUE TO NEXT GUIDE :arrow_right:](.md)
-
 [BACK TO PREVIOUS GUIDE :arrow_left:](SetupAccess.md)
