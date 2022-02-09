@@ -134,6 +134,7 @@ First, we are going to do it on Similar Items.
 
     ![](../images/Personalize/21-2.png)
 
+We need to wait approximately 15-30 minutes for training process to be completed.
 
 22. Once it's done, We are going to launch it in real time manner. Choose `Campaigns` menu and click `Create campaign`
     ![](../images/Personalize/22.png)
