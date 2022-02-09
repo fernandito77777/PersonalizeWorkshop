@@ -68,29 +68,29 @@ Your data will be exported approximately 5 minutes.
 
 ```
 {
-	`type`: `record`,
-	`name`: `Items`,
-	`namespace`: `com.amazonaws.personalize.schema`,
-	`fields`: [
+	"type": "record",
+	"name": "Items",
+	"namespace": "com.amazonaws.personalize.schema",
+	"fields": [
 		{
-			`name`: `ITEM_ID`,
-			`type`: `string`
+			"name": "ITEM_ID",
+			"type": "string"
 		},
 		{
-			`name`: `GENRE`,
-			`type`: `string`,
-			`categorical`: true
+			"name": "GENRE",
+			"type": "string",
+			"categorical": true
 		},
 		{
-			`name`: `YEAR`,
-			`type`: `int`
+			"name": "YEAR",
+			"type": "int"
 		},
 		{
-			`name`: `CREATION_TIMESTAMP`,
-			`type`: `long`
+			"name": "CREATION_TIMESTAMP",
+			"type": "long"
 		}
 	],
-	`version`: `1.0`
+	"version": "1.0"
 }
 ```
 
