@@ -14,7 +14,7 @@ First, we need to update our S3 configurations.
 4. In Bucket policy, click `Edit`
     ![](../images/Batch/4.png)
 
-5. Copy this Bucket Policy
+5. Copy this Bucket Policy. Please replace the `BucketName` with your S3 bucket name `<yourname>-test-personalize-data`
 
 ```
 {
@@ -33,8 +33,8 @@ First, we need to update our S3 configurations.
 				"s3:PutObject"
 			],
 			"Resource": [
-				"arn:aws:s3:::fernandito-test-personalize-data",
-				"arn:aws:s3:::fernandito-test-personalize-data/*"
+				"arn:aws:s3:::BucketName",
+				"arn:aws:s3:::BucketName/*"
 			]
 		}
 	]
