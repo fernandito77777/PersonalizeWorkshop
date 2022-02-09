@@ -8,7 +8,7 @@ By Following this guide, you can try Amazon Personalize in AWS Console based.
 * 1 - [Setup Data for Recommendation System](docs/SetupData.md)
 * 2 - [Setup S3 Bucket Access to Personalize](docs/SetupAccess.md)
 * 3 - [Setup Real Time Recommendation System using Personalize](docs/Personalize.md)
-* 3 - [Setup Batch Inference using Personalize](docs/Batch.md)
+* 4 - [Setup Batch Inference using Personalize](docs/Batch.md)
 
 ### Scope
 * This project has been tested on ap-southeast-1 Region (Singapore)
