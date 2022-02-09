@@ -19,28 +19,28 @@ Domain on this really depends on your use case for recommendation system. It mos
 
 ```
 {
-  `type`: `record`,
-  `name`: `Interactions`,
-  `namespace`: `com.amazonaws.personalize.schema`,
-  `fields`: [
+  "type": "record",
+  "name": "Interactions",
+  "namespace": "com.amazonaws.personalize.schema",
+  "fields": [
     {
-      `name`: `USER_ID`,
-      `type`: `string`
+      "name": "USER_ID",
+      "type": "string"
     },
     {
-      `name`: `ITEM_ID`,
-      `type`: `string`
+      "name": "ITEM_ID",
+      "type": "string"
     },
     {
-      `name`: `TIMESTAMP`,
-      `type`: `long`
+      "name": "TIMESTAMP",
+      "type": "long"
     },
     {
-      `name`: `EVENT_TYPE`,
-      `type`: `string`
+      "name": "EVENT_TYPE",
+      "type": "string"
     }
   ],
-  `version`: `1.0`
+  "version": "1.0"
 }
 ```
 
